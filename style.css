@@ -1,0 +1,139 @@
+* {
+    border: solid red 1px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(white, lightgray);
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+ul {
+    display: none;
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+input[type=checkbox]:checked~ul {
+    display: block;
+}
+
+.accordion {
+    display: block;
+}
+
+
+/* .control-me::after {
+    content: "";
+    font-size: 14px;
+    max-height: 0;
+}
+
+#toggle:checked~.control-me::after {
+    content: "lorem impsu";
+    max-height: 600px;
+}
+
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font: 900 24px/1.4 -system-ui, sans-serif;
+} */
+
+
+/* * {
+    background-image: linear-gradient(white, lightgray);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu {
+    width: 300px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.item {
+    overflow: hidden;
+}
+
+.btn {
+    display: block;
+    padding: 16px 20px;
+    background: grey;
+    color: white;
+    position: relative;
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: grey;
+    left: 20px;
+    bottom: -7px;
+    transform: rotate(45deg);
+}
+
+.smenu {
+    background: darkblue;
+    overflow: hidden;
+    transition: maxheight 0.3s;
+    max-height: 0;
+}
+
+.smenu a {
+    display: block;
+    padding: 16px, 25px;
+    color: white;
+    font-size: 14px;
+    margin: 4px;
+    position: relative;
+}
+
+.smenu a:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+
+/* 
+.smenu a:hover:before {
+    opacity: 1;
+}
+
+.item:target .smenu {
+    max-height: 10em;
+} */
